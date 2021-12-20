@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 /*function App() {
   return (
-    <div className="App">
+    <div className="App">git remote add origin https://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@github.com/gitsumakwel/restoplus_demo.git
 
     </div>
   );
@@ -17,6 +17,11 @@ class App extends React.Component {
         list: null,
         page: 0,
       }
+    }
+
+    resetContributor = async () => {
+      await this.setState({page:0})
+      this.nextContributor()
     }
 
     nextContributor = async () => {
@@ -48,6 +53,7 @@ class App extends React.Component {
       return (
         <div>
         <h1>Contributors</h1>
+        <button onClick={this.resetContributor} className='contribbtn'>reset</button>
         <button onClick={this.nextContributor} className='contribbtn'>next</button>
 
         <table>
