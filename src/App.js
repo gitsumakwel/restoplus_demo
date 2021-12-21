@@ -2,13 +2,7 @@ import './App.css';
 import React from 'react';
 import $ from 'jquery';
 
-/*function App() {
-  return (
-    <div className="App">git remote add origin https://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@github.com/gitsumakwel/restoplus_demo.git
 
-    </div>
-  );
-}*/
 /*https://api.github.com/repos/microsoft/typescript/contributors?per_page=10*/
 class App extends React.Component {
     constructor(props) {
